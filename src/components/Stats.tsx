@@ -1,21 +1,21 @@
 
 const Stats = () => {
   const stats = [
-    { number: "2M+", label: "Projects Created", description: "Built by developers worldwide" },
-    { number: "150+", label: "Countries", description: "Using our platform daily" },
-    { number: "99.99%", label: "Uptime", description: "Reliable infrastructure" },
-    { number: "24h", label: "Support", description: "Always here to help" }
+    { number: "500+", label: "Cups Daily", description: "Served with love" },
+    { number: "15", label: "Coffee Varieties", description: "From around the world" },
+    { number: "8", label: "Years Serving", description: "The community" },
+    { number: "4.9★", label: "Customer Rating", description: "On Google Reviews" }
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600">
+    <section className="py-24 bg-gradient-to-r from-amber-800 via-orange-700 to-red-700">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Trusted by developers globally
+            Loved by the community
           </h2>
-          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
-            Join millions of developers who choose our platform to build their next big thing.
+          <p className="text-xl text-amber-100 max-w-2xl mx-auto">
+            Join hundreds of coffee lovers who make Brew & Bean their daily destination.
           </p>
         </div>
         
@@ -25,10 +25,10 @@ const Stats = () => {
               <div className="text-4xl md:text-6xl font-bold text-white mb-2">
                 {stat.number}
               </div>
-              <div className="text-lg font-semibold text-purple-100 mb-1">
+              <div className="text-lg font-semibold text-amber-100 mb-1">
                 {stat.label}
               </div>
-              <div className="text-sm text-purple-200">
+              <div className="text-sm text-amber-200">
                 {stat.description}
               </div>
             </div>

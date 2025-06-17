@@ -1,58 +1,58 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { LayoutGrid, Zap, Shield, Palette, Code, Users } from "lucide-react";
+import { Coffee, Leaf, Users, Heart, Clock, Wifi } from "lucide-react";
 
 const features = [
   {
-    icon: LayoutGrid,
-    title: "Smart Grid System",
-    description: "Intelligent layout grids that adapt to any screen size with pixel-perfect precision.",
-    color: "text-purple-500"
+    icon: Coffee,
+    title: "Artisan Coffee",
+    description: "Single-origin beans roasted in-house daily for the perfect cup every time.",
+    color: "text-amber-600"
   },
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Optimized performance with sub-100ms load times and instant interactions.",
-    color: "text-yellow-500"
-  },
-  {
-    icon: Shield,
-    title: "Enterprise Security",
-    description: "Bank-grade security with SOC 2 compliance and end-to-end encryption.",
-    color: "text-green-500"
-  },
-  {
-    icon: Palette,
-    title: "Design System",
-    description: "Consistent, beautiful components that scale across your entire product.",
-    color: "text-pink-500"
-  },
-  {
-    icon: Code,
-    title: "Developer First",
-    description: "Clean APIs, comprehensive docs, and tools that developers actually love.",
-    color: "text-blue-500"
+    icon: Leaf,
+    title: "Organic & Fair Trade",
+    description: "Ethically sourced coffee that supports farmers and protects the environment.",
+    color: "text-green-600"
   },
   {
     icon: Users,
-    title: "Team Collaboration",
-    description: "Real-time collaboration tools that keep your team in perfect sync.",
-    color: "text-indigo-500"
+    title: "Community Space",
+    description: "A welcoming place where neighbors meet, work, and create lasting memories.",
+    color: "text-blue-600"
+  },
+  {
+    icon: Heart,
+    title: "Made with Love",
+    description: "Every drink is crafted by passionate baristas who care about your experience.",
+    color: "text-red-500"
+  },
+  {
+    icon: Clock,
+    title: "Quick Service",
+    description: "Fast, friendly service without compromising on quality or attention to detail.",
+    color: "text-purple-600"
+  },
+  {
+    icon: Wifi,
+    title: "Work-Friendly",
+    description: "Free Wi-Fi, comfortable seating, and the perfect atmosphere for productivity.",
+    color: "text-indigo-600"
   }
 ];
 
 const Features = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gradient-to-b from-amber-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Everything you need to 
-            <span className="text-purple-600"> build amazing</span>
+            Why Choose 
+            <span className="text-amber-600"> Brew & Bean?</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive platform provides all the tools and features you need to create 
-            world-class digital experiences.
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            More than just coffee - we're your neighborhood gathering place where quality, 
+            community, and comfort come together.
           </p>
         </div>
         
@@ -63,7 +63,7 @@ const Features = () => {
               className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white"
             >
               <CardContent className="p-8">
-                <div className={`inline-flex p-3 rounded-lg bg-gray-100 mb-6`}>
+                <div className={`inline-flex p-3 rounded-lg bg-amber-100 mb-6`}>
                   <feature.icon className={`h-6 w-6 ${feature.color}`} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">

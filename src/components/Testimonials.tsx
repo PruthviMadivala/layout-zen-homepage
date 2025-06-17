@@ -4,26 +4,23 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "Senior Frontend Developer",
-    company: "TechCorp",
-    content: "LayoutZen has completely transformed our development workflow. What used to take hours now takes minutes. The grid system is incredibly intuitive.",
+    name: "Sarah Mitchell",
+    role: "Local Artist",
+    content: "Brew & Bean is my creative sanctuary. The atmosphere is perfect for sketching, and their lavender latte is absolutely divine!",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face"
   },
   {
-    name: "Marcus Rodriguez",
-    role: "CTO",
-    company: "StartupXYZ",
-    content: "The best investment we've made for our team. The collaboration features and design system have standardized our entire product suite.",
+    name: "Mike Chen",
+    role: "Remote Worker",
+    content: "Best coffee shop in town! Great Wi-Fi, comfortable seating, and the baristas know my order by heart. It's my second office.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face"
   },
   {
-    name: "Emily Zhang",
-    role: "Product Designer",
-    company: "Design Studio",
-    content: "As a designer, I love how easy it is to create responsive layouts that look perfect on every device. The visual feedback is incredible.",
+    name: "Emma Rodriguez",
+    role: "Local Resident",
+    content: "The staff treats everyone like family here. My kids love the hot chocolate, and I'm obsessed with their seasonal pumpkin spice blend.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face"
   }
@@ -35,10 +32,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Loved by <span className="text-purple-600">developers</span>
+            What our <span className="text-amber-600">customers</span> say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            See what our community has to say about their experience building with LayoutZen.
+            Don't just take our word for it - hear from the amazing people who make our coffee shop special.
           </p>
         </div>
         
@@ -52,7 +49,7 @@ const Testimonials = () => {
                   ))}
                 </div>
                 
-                <Quote className="h-8 w-8 text-purple-300 mb-4" />
+                <Quote className="h-8 w-8 text-amber-300 mb-4" />
                 
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   "{testimonial.content}"
@@ -66,9 +63,7 @@ const Testimonials = () => {
                   />
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">
-                      {testimonial.role} at {testimonial.company}
-                    </div>
+                    <div className="text-sm text-gray-600">{testimonial.role}</div>
                   </div>
                 </div>
               </CardContent>
